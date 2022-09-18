@@ -6,34 +6,6 @@ of RTSP based cameras with future implementation of GUI in the works.
 as a "new version" also developed by [me](https://github.com/akielaries), building off of the application
 used for the DiscoverCCRI research study. This project will be open source and welcomes contributors.*
 
-Note: Will also be working on some implementations in C++. For now see some examples on providing basic feed.
-
-**For GTK GUI features**
-
-# Build this project
----
-**with Docker**
-```
-$ git clone git@github.com:DiscoverCCRI/ip_cam.git &&
-cd /scripts 
-$ docker build -t ip_cam . &&
-docker image ls
-$ docker container run --privledged -d ip_cam
-```
-**manually**
-```
-$ git clone git@github.com:DiscoverCCRI/ip_cam.git &&
-cd ip_cam/src &&
-python3 test_stream_v1.py proxy_stream.py
-```
-Enter the IP address of the machine you are hosting this project from in a browser
-and your feed should be present. 
-
-# Issues
----
-
-# Examples
----
 
 # Ideas
 - think of different py libs to implement GUI, PyQt, Tkinter, etc
@@ -44,3 +16,4 @@ for an application.
 implementations.
 - research using GTK with C
 - Research using curses (terminal-based GUI)
+- hash out the issues with buffering on our test cams
